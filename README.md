@@ -95,15 +95,17 @@ Model predicts price
 
 Result shown on UI
 
-📸 Screenshots
+## 🖼 Application Screenshots
 
-Home Page
+### 1. Input Dashboard
+![Dashboard](images/dashboard.png)
 
-Input Form
+### 2. Entering Details
+![Input](images/input.png)
 
-Prediction Output
+### 3. Prediction Result
+![Result](images/result.png)
 
-(Add your app screenshots here later)
 
 📈 Future Improvements
 
