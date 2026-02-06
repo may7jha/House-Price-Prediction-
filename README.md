@@ -75,7 +75,7 @@ Streamlit
 
 Git & GitHub
 
-### 📁 Project Structure
+📁 Project Structure
 house-price-project/
 │
 ├── data/                     # Dataset
