@@ -46,3 +46,81 @@ Joblib
 Streamlit
 
 Git & GitHub
+
+📁 Project Structure
+house-price-project/
+│
+├── data/                     # Dataset
+├── notebooks/                # Training notebooks
+│   ├── eda.ipynb
+│   ├── final_model.pkl
+│   └── train_columns.pkl
+│
+├── app.py                    # Streamlit app
+├── requirements.txt
+└── README.md
+
+⚙ How to Run Locally
+
+Clone repo
+
+git clone https://github.com/may7jha/House-Price-Prediction.git
+cd House-Price-Prediction
+
+
+Create virtual environment
+
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+
+
+Install dependencies
+
+pip install -r requirements.txt
+
+
+Run app
+
+streamlit run app.py
+
+🔁 Prediction Pipeline
+
+User enters house details
+
+Input converted to dataframe
+
+Columns aligned with training
+
+Model predicts price
+
+Result shown on UI
+
+📸 Screenshots
+
+Home Page
+
+Input Form
+
+Prediction Output
+
+(Add your app screenshots here later)
+
+📈 Future Improvements
+
+Add location feature
+
+Add more models (XGBoost, LightGBM)
+
+Add visualization dashboard
+
+User authentication
+
+API version using FastAPI
+
+👤 Author
+
+Mayank Jha
+Aspiring Data Scientist
+GitHub: https://github.com/may7jha
+
+⭐ If you like this project, give it a star on GitHub!
