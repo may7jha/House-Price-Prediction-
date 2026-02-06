@@ -33,6 +33,34 @@ R² Score	0.89
 
 Model trained on structured housing dataset with proper preprocessing and feature engineering.
 
+## 🧠 How Model Was Trained
+
+1. **Dataset**
+- Used House Prices dataset with numerical features like:
+  - GrLivArea  
+  - OverallQual  
+  - GarageArea  
+  - YearBuilt  
+  - LotArea  
+
+2. **Preprocessing**
+- Selected important numerical features  
+- Handled missing values  
+- Split data into Train/Test  
+- Feature scaling applied
+
+3. **Model Building**
+- Algorithm: Linear Regression  
+- Training process:
+  - Train-test split (80-20)
+  - Model fitted on training data
+  - Evaluated using RMSE and R² score
+
+4. **Model Saving**
+- Model saved using `joblib`
+- Columns saved for consistent prediction
+
+
 🛠 Tech Stack
 
 Python
