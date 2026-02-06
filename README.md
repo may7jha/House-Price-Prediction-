@@ -17,14 +17,7 @@ Processes them using trained model
 
 Predicts accurate house price instantly
 
-## Features
 
-✔ Interactive web interface using Streamlit
-✔ Real-time prediction
-✔ Handles real-world input safely
-✔ Matches training pipeline automatically
-✔ Deployed on Streamlit Cloud
-✔ Production-ready structure
 
 ### Model Details
 
@@ -32,7 +25,7 @@ Algorithm: Random Forest Regressor
 
 Target: Sale Price
 
-##Performance:
+Performance:
 
 Metric	Value
 RMSE	28,767
@@ -40,7 +33,7 @@ R² Score	0.89
 
 Model trained on structured housing dataset with proper preprocessing and feature engineering.
 
-##🛠 Tech Stack
+🛠 Tech Stack
 
 Python
 
