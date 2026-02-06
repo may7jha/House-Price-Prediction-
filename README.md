@@ -1,6 +1,6 @@
-🏠 House Price Prediction – End to End ML Web App
+### 🏠 House Price Prediction – End to End ML Web App
 
-🌐 Live App
+## 🌐 Live App
 
 👉 https://2zfehqmwak3s3cu6k5lgas.streamlit.app/
 
@@ -75,7 +75,7 @@ Streamlit
 
 Git & GitHub
 
-📁 Project Structure
+### 📁 Project Structure
 house-price-project/
 │
 ├── data/                     # Dataset
@@ -88,7 +88,7 @@ house-price-project/
 ├── requirements.txt
 └── README.md
 
-⚙ How to Run Locally
+## ⚙ How to Run Locally
 
 Clone repo
 
@@ -111,7 +111,7 @@ Run app
 
 streamlit run app.py
 
-🔁 Prediction Pipeline
+## 🔁 Prediction Pipeline
 
 User enters house details
 
@@ -135,7 +135,7 @@ Result shown on UI
 ![Result](images/result.png)
 
 
-📈 Future Improvements
+## 📈 Future Improvements
 
 Add location feature
 
@@ -147,10 +147,10 @@ User authentication
 
 API version using FastAPI
 
-👤 Author
+## 👤 Author
 
-Mayank Jha
-Aspiring Data Scientist
-GitHub: https://github.com/may7jha
+## Mayank Jha
+## Aspiring Data Scientist
+## GitHub: https://github.com/may7jha
 
 ⭐ If you like this project, give it a star on GitHub!
