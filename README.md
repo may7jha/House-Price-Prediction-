@@ -75,18 +75,18 @@ Streamlit
 
 Git & GitHub
 
-📁 Project Structure
-house-price-project/
-│
-├── data/                     # Dataset
-├── notebooks/                # Training notebooks
-│   ├── eda.ipynb
-│   ├── final_model.pkl
-│   └── train_columns.pkl
-│
-├── app.py                    # Streamlit app
-├── requirements.txt
-└── README.md
+## 📁 Project Structure
+## house-price-project/
+## │
+## ├── data/                     # Dataset
+## ├── notebooks/                # Training notebooks
+## │   ├── eda.ipynb
+## │   ├── final_model.pkl
+## │   └── train_columns.pkl
+## │
+## ├── app.py                    # Streamlit app
+## ├── requirements.txt
+## └── README.md
 
 ## ⚙ How to Run Locally
 
