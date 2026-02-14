@@ -55,9 +55,27 @@ input_data["BedroomAbvGr"] = bedroom
 input_data["Fireplaces"] = fireplaces
 input_data["TotRmsAbvGrd"] = totrms
 
-# ----------------------------------------
+currency = st.selectbox(
+    "Select Currency",
+    ["USD ($)", "INR (₹)"]
+)
+
+
+# ----------------------------
 # PREDICTION
-# ----------------------------------------
+# ----------------------------
 if st.button("Predict Price"):
+
     price = model.predict(input_data)[0]
-    st.success(f"Predicted Price = ₹ {round(price,2)}")
+
+    # conversion rate
+    usd_to_inr = 83
+
+    if currency == "USD ($)":
+        display_price = price
+        symbol = "$"
+    else:
+        display_price = price * usd_to_inr
+        symbol = "₹"
+
+    st.success(f"Predicted Price = {symbol} {display_price:,.2f}")
