@@ -18,6 +18,16 @@ This project provides a **Machine Learning powered system** that:
 
 ---
 
+## 🚀 Key Features
+
+- Interactive **Streamlit dashboard**
+- Real-time **house price prediction**
+- **Currency toggle (USD / INR)** for global users
+- Clean UI with instant feedback
+- End-to-end ML pipeline (EDA → Model → Deployment)
+
+---
+
 ## 🤖 Model Overview
 
 - **Algorithm:** Random Forest Regressor  
