@@ -1,128 +1,132 @@
-🏠 House Price Prediction – End to End ML Web App
+# 🏠 House Price Prediction – End-to-End ML Web App
 
-🌐 Live App
-
+🌐 **Live App:**  
 👉 https://2zfehqmwak3s3cu6k5lgas.streamlit.app/
 
-## Business Problem
+---
 
-Real estate prices depend on many factors like area, quality, location, rooms, etc.
-Manually estimating price is difficult and subjective.
+## 📌 Business Problem
 
-This project builds a Machine Learning based prediction system that:
+Real estate price estimation depends on multiple factors such as area, quality, age of property, and amenities.  
+Manual estimation is subjective and error-prone.
 
-Takes house details from user
+This project provides a **Machine Learning powered system** that:
 
-Processes them using trained model
+- Accepts house details from user  
+- Processes them using trained ML model  
+- Predicts house price instantly through a web interface  
 
-Predicts accurate house price instantly
+---
 
+## 🤖 Model Overview
 
+- **Algorithm:** Random Forest Regressor  
+- **Target Variable:** Sale Price  
+- **Evaluation Metrics:**
 
-### Model Details
+| Metric | Value |
+|------|-------|
+| RMSE | 28,767 |
+| R² Score | 0.89 |
 
-Algorithm: Random Forest Regressor
+The model was trained on structured housing data with proper preprocessing and feature engineering.
 
-Target: Sale Price
+---
 
-Performance:
+## 🧠 How the Model Was Trained
 
-Metric	Value
-RMSE	28,767
-R² Score	0.89
+### Dataset Features Used
+- GrLivArea  
+- OverallQual  
+- GarageArea  
+- YearBuilt  
+- LotArea  
 
-Model trained on structured housing dataset with proper preprocessing and feature engineering.
+### Preprocessing Steps
+- Selected important numerical features  
+- Handled missing values  
+- Train-Test split (80-20)  
+- Feature scaling  
+- Column alignment for prediction  
 
-🛠 Tech Stack
+### Training Pipeline
+1. Load dataset  
+2. Clean & preprocess  
+3. Train Random Forest model  
+4. Evaluate using RMSE & R²  
+5. Save model using `joblib`  
+6. Save training columns for consistency  
 
-Python
+---
 
-Scikit-learn
+## 🛠 Tech Stack
 
-Pandas
+- Python  
+- Scikit-learn  
+- Pandas  
+- Joblib  
+- Streamlit  
+- Git & GitHub  
 
-Joblib
+---
 
-Streamlit
+## ⚙ How to Run Locally
 
-Git & GitHub
-
-📁 Project Structure
-house-price-project/
-│
-├── data/                     # Dataset
-├── notebooks/                # Training notebooks
-│   ├── eda.ipynb
-│   ├── final_model.pkl
-│   └── train_columns.pkl
-│
-├── app.py                    # Streamlit app
-├── requirements.txt
-└── README.md
-
-⚙ How to Run Locally
-
-Clone repo
-
+```bash
+# Clone repository
 git clone https://github.com/may7jha/House-Price-Prediction.git
 cd House-Price-Prediction
 
-
-Create virtual environment
-
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
+# Windows
+venv\Scripts\activate
 
-
-Install dependencies
-
+# Install dependencies
 pip install -r requirements.txt
 
-
-Run app
-
+# Run application
 streamlit run app.py
+```
 
-🔁 Prediction Pipeline
+---
 
-User enters house details
+## 🔁 Prediction Pipeline
 
-Input converted to dataframe
+1. User enters house details  
+2. Input converted to DataFrame  
+3. Columns aligned with training  
+4. Model predicts price  
+5. Result displayed on UI  
 
-Columns aligned with training
-
-Model predicts price
-
-Result shown on UI
+---
 
 ## 🖼 Application Screenshots
 
-### 1. Input Dashboard
+### 1. Input Dashboard  
 ![Dashboard](images/dashboard.png)
 
-### 2. Entering Details
+### 2. Entering Details  
 ![Input](images/input.png)
 
-### 3. Prediction Result
+### 3. Prediction Result  
 ![Result](images/result.png)
 
+---
 
-📈 Future Improvements
+## 📈 Future Enhancements
 
-Add location feature
+- Add location feature  
+- Compare models (XGBoost, LightGBM)  
+- Add EDA dashboard  
+- FastAPI backend  
+- User authentication  
 
-Add more models (XGBoost, LightGBM)
+---
 
-Add visualization dashboard
+## 👤 Author
 
-User authentication
+**Mayank Jha** – Aspiring Data Scientist  
+GitHub: https://github.com/may7jha  
 
-API version using FastAPI
-
-👤 Author
-
-Mayank Jha
-Aspiring Data Scientist
-GitHub: https://github.com/may7jha
-
-⭐ If you like this project, give it a star on GitHub!
+⭐ If you like this project, give it a star!
