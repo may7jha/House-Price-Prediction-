@@ -78,4 +78,8 @@ if st.button("Predict Price"):
         display_price = price * usd_to_inr
         symbol = "₹"
 
-    st.success(f"Predicted Price = {symbol} {display_price:,.2f}")
+    st.markdown(
+    f"<h3 style='color:green'>Predicted Price: {symbol} {round(display_price,2)}</h3>",
+    unsafe_allow_html=True
+)
+
